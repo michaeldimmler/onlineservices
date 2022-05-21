@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Onlineservice</title>
+</head>
+<body>
+	<h1>Input Elements List</h1>
+	
+	<table>
+		<tr>
+			<th>Label</th>
+			<th>Explain Text</th>
+			<th>Type</th>
+		</tr>
+		<tr th:each="inputElement : ${inputElements}"> 
+			<td th:text="${inputElement.label}"></td>
+			<td th:text="${inputElement.explain}"></td>
+			<td th:text="${inputElement.type}"></td>
+		</tr>
+	</table>
+	
+</body>
+</html>

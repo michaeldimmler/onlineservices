@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Onlineservice</title>
+</head>
+<body>
+	<h1>Page List</h1>
+	
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+		<tr th:each="page : ${pages}"> 
+			<td th:text="${page.name}"></td>
+			<td th:text="${page.description}"></td>
+		</tr>
+	</table>
+	
+</body>
+</html>
